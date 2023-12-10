@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="https://res.cloudinary.com/drt9pns4x/image/upload/v1699970191/oie_nsKGoYLKQIxA_mbhjnp.jpg" class="logo">
+            <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Projects</a></li>
+                 <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            
+            <h1>   Hi all I'm Manjula</h1>
+            <p>A passionate Web Developer <br>having an of building Web applications </p>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://res.cloudinary.com/drt9pns4x/image/upload/c_pad,w_200/v1700407103/logo_ybttdm.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>WEB DEVELOPER</span><br>Designing web pages<br>Created dynamic web pages</li>
+                        <li><span>LANGUAGES KNOWN</span><br>C<br>HTML<br>CSS</li>
+                        <li><span>BASIC KNOWLEDGE ON</span><br>PYTHON<br>JAVA</li>
+                    </ul>
+                </div>
+               
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - CURRENT</span><br>PURSUING B.TECH</li>
+                        <li><span>2019-2021</span><br>SRI CHAITANYA COLLEGE</li>
+                        <li><span>2018</span><br>SRI CHAITANYA TECHNO SCHOOL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1> 
+         <div class="project-list">
+            <div class="project">>
+              <img src="https://res.cloudinary.com/drt9pns4x/image/upload/c_pad,w_300,h_250/v1700736592/facial-recognition-istock-large_k5zbne.webp">
+           
+               <div class="layer">
+                 <h3>FACE RECOGNITION BASED ATM</h3>
+                 
+                 <p>The project is based on transactions can be done using face recognition
+                 instead of using ATM card as we supposed to use earlier.</p>
+                 <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="project">>
+                <img src="https://res.cloudinary.com/drt9pns4x/image/upload/v1700244869/full-shot-woman-online-fashion-shopping_23-2150460087_hkvdcs.jpg">
+             
+                 <div class="layer">
+                   <h3>LANDING PAGE</h3>
+                   
+                   <p>Landing page is about clothing brand where customers can shop online according to their requirements and the customers can customize their clothes.</p>
+                   <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                 </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i>manjula@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>1234567890</p>
+                <div class="social-icons">
+                   
+                        <a href="">
+                        <img src="https://res.cloudinary.com/drt9pns4x/image/upload/v1699981286/Instagram-Icon_fdch5c_mysvpk.png" class="social-icon-img">
+                        </a>
+                        <a href="">
+                            <img src="https://res.cloudinary.com/drt9pns4x/image/upload/c_pad,w_30/v1699983664/facebook-icon-512x512-seb542ju_zkkpya.png" class="social-icon-img">
+                        </a>
+                        <a href="">
+                            <img src="https://res.cloudinary.com/drt9pns4x/image/upload/c_pad,w_30/v1701242434/twitter_xkqvds.png" class="social-icon-img">
+                        </a>
+                        <a href="">
+                            <img src="https://res.cloudinary.com/drt9pns4x/image/upload/c_pad,w_30/v1699982996/174857_mkd0az.png" class="social-icon-img">
+                        </a>
+                    
+                  </div>
+                  <a href="https://res.cloudinary.com/drt9pns4x/image/upload/v1701243450/Resume-example-Luxe.1693324156611_ytujgt.svg" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                   <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+     <div class="copyright">
+        <p>Copyright Dharavath Manjula<i class="fa-solid fa-heart"></i></p>
+     </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
